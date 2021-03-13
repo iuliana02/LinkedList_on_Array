@@ -229,10 +229,26 @@ void testIterator() {
 	testIterator(desc);
 }
 
+
+//Teste functia suplimentara
+void TestDurchschnitt()
+{
+	SortedMultiMap smm1 = SortedMultiMap(asc);
+	SortedMultiMap smm2 = SortedMultiMap(asc);
+	smm1.add(1, 2);
+	smm1.add(1, 3);
+	smm1.add(2, 2);
+	smm2.add(2, 2);
+	
+	SortedMultiMap smm3 = smm3.durchschnitt(smm1,smm2);
+	assert(smm3.size()==1);
+}
+
 void testAllExtended() {
 	testCreate();
 	testSearch();
 	testRemove();
 	testIterator();
 	testRelations();
+	//TestDurchschnitt();
 }

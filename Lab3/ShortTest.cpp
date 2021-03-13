@@ -5,6 +5,7 @@
 #include <exception>
 #include <vector>
 
+#include <iostream>
 using namespace std;
 
 bool relation1(TKey cheie1, TKey cheie2) {
